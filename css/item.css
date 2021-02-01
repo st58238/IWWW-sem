@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+.item {
+	display: flex;
+	width: 100%;
+	padding-top: 50px;
+}
+
+.item-image-container {
+	display: flex;
+	justify-content: center;
+	max-height: 320px;
+	width: 35%;
+	margin-right: 25px;
+	overflow: hidden;
+}
+
+.item-name {
+	font-size: 2em;
+	margin-top: 15px;
+	margin-bottom: 0;
+}
+
+.item-info {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+}
+
+.item-image {
+	max-height: 100%;
+	width: auto;
+}
+
+.item-stockinfo {
+	display: flex;
+	justify-content: space-between;
+	font-size: 1.25em;
+	margin: 20px 0;
+}
+
+.item-stockinfo p {
+	margin: 0;
+	margin-top: 5px;
+}
+
+.item-stockinfo button {
+	font-size: 0.8em;
+	margin: 0;
+}
+
+.item-desc {
+	font-size: 1.1em;
+}

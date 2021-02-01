@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+.contacts {
+	display: flex;
+	justify-content: center;
+	flex-wrap: nowrap;
+	width: 95%;
+}
+
+.contact {
+	width: 100%;
+	flex-shrink: 1;
+}
+
+.contact-image {
+	width: 100%;
+}
+
+.cont {
+	float: left;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex-shrink: 0;
+	max-width: 120px;
+	padding-top: 8px;
+}
+
+.cont-role {
+	margin-bottom: 5px;
+}
+
+.cont-name {
+	margin-top: 0;
+	padding-top: 0;
+}
+
+.cont-compress {
+	margin: 8px 0;
+}
+
+.cont-find {
+	align-self: flex-start;
+	margin-left: 2.5%;
+}

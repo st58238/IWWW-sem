@@ -1,0 +1,130 @@
+@charset "UTF-8";
+
+.user-info {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	width: 80%;
+}
+
+.user-fullname {
+	margin-bottom: 5px;
+}
+
+.user-email {
+	margin-top: 0px;
+}
+
+.container-row {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 100%;
+	justify-content: space-between;
+}
+
+.user-nav {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 20%;
+}
+
+.user-nav a {
+	padding-left: 10%;
+	transition: 0.3s;
+}
+
+.user-nav a:nth-of-type(odd), .order:nth-of-type(odd) {
+	background-color: rgba(225, 225, 225, 0.35);
+}
+
+.user-nav a:nth-of-type(even), .order:nth-of-type(even) {
+	background-color: rgba(225, 225, 225, 0.05);
+}
+
+.user-nav a:hover, .order:hover {
+	background-color: lightgrey;
+	transition: 0.3s;
+}
+
+.orders {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+.orders > a {
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+.order {
+	padding: 0 3%;
+	transition: 0.3s;
+}
+
+.order, .order-prices {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.order-prices {
+	justify-content: space-around;
+	height: 100%;
+}
+
+.order-prices > p {
+	padding: 0 10px;
+}
+
+.product-action-bar {
+
+}
+
+.product-image {
+	height: 200px;
+	width: auto;
+}
+
+.user-box > h4{
+	width: 280px;
+}
+
+.user-buttons {
+	display: flex;
+	width: 250px;
+	justify-content: space-between;
+	align-items: center;
+	flex-shrink: 0;
+}
+
+@media only screen and (max-width: 768px) {
+
+	.user-nav {
+		width: 28%;
+	}
+
+	.user-nav > a:not(:last-of-type) {
+		border-right: 2px solid var(--brown-bg);
+	}
+
+	.user-info {
+		width: 72%;
+	}
+
+	.product-image {
+		display: none !important;
+	}
+
+	.tagchange {
+		margin: 15px 8px !important;
+	}
+
+	a[href="administrace/export"] {
+		display: none;
+	}
+}
